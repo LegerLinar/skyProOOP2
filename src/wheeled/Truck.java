@@ -1,19 +1,13 @@
 package wheeled;
 
-public class Truck {
+public class Truck extends TyreMechanism {
 
     public String modelName;
     public int wheelsCount;
 
-    public void updateTyre() {
-        System.out.println("Меняем покрышку");
+    public Truck(String name, byte wheelsCount) {
+        super(name, wheelsCount);
     }
 
-    public void checkEngine() {
-        System.out.println("Проверяем двигатель");
-    }
 
-    public void checkTrailer() {
-        System.out.println("Проверяем прицеп");
-    }
 }

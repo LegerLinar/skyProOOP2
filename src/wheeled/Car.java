@@ -1,15 +1,16 @@
 package wheeled;
 
-public class Car {
-
-    public String modelName;
-    public int wheelsCount;
-
-    public void updateTyre() {
-        System.out.println("Меняем покрышку");
+public class Car  extends TyreMechanism{
+    public Car(String name, byte wheelsCount) {
+        super(name, wheelsCount);
     }
 
-    public void checkEngine() {
-        System.out.println("Проверяем двигатель");
+    @Override
+    public void toService(TyreMechanism mechanism){
+        super.toService(mechanism);
+        if (this.getClass() == mechanism.getClass()) {
+            checkEngine();
+        }
+
     }
 }

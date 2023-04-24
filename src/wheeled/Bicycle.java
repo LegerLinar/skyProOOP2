@@ -1,11 +1,13 @@
 package wheeled;
 
-public class Bicycle {
+public class Bicycle extends TyreMechanism {
 
-    public String modelName;
-    public int wheelsCount;
+    public Bicycle(String name, byte wheelsCount) {
+        super(name, wheelsCount);
+    }
 
-    public void updateTyre() {
-        System.out.println("Меняем покрышку");
+    @Override
+    public void toService(TyreMechanism mechanism) {
+        super.toService(mechanism);
     }
 }
