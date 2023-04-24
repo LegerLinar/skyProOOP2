@@ -1,10 +1,15 @@
 package wheeled;
 
 interface ServiceStation {
-    public void toService(TyreMechanism mechanism);
+     void toService();
 
-    public default void checkEngine(){
+     default void checkEngine(){
         System.out.println("Проверяем двигатель");
         }
+
+     default void checkTrailer(){
+        System.out.println("Проверяем прицеп");
+    }
+
     }
 

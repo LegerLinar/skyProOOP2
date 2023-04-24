@@ -1,25 +1,26 @@
 package wheeled;
 
 public class TyreMechanism implements ServiceStation{
- private String modelName;
- private final byte wheelsCount;
+ private final String modelName;
+ private final int wheelsCount;
 
-    public TyreMechanism(String name, byte wheelsCount) {
+    public TyreMechanism(String name, int wheelsCount) {
         this.modelName = name;
         this.wheelsCount = wheelsCount;
     }
 
 
-    public void updateTyre(TyreMechanism mechanism){
-        for (byte wheel = 0; wheel < mechanism.wheelsCount; wheel++) {
+    public void updateTyre(){
+        for (byte wheel = 0; wheel < this.wheelsCount; wheel++) {
             System.out.println("Меняем покрышку");
         }
     }
 
     @Override
-    public void toService(TyreMechanism mechanism) {
-        System.out.println("Обслуживаем " + mechanism.modelName);
-        updateTyre(mechanism);
+    public void toService() {
+
+        System.out.println("Обслуживаем " + this.modelName);
+        updateTyre();
     }
 
 }
