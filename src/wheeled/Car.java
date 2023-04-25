@@ -13,9 +13,7 @@ public class Car  extends TyreMechanism implements ServiceStationCheckEngine{
     @Override
     public void toService(){
         super.toService();
-        if (this.getClass() == Car.class) {
             checkEngine();
-        }
 
     }
 }

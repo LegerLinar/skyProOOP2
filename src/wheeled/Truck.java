@@ -21,9 +21,7 @@ public class Truck extends TyreMechanism implements ServiceStationCheckEngine, S
     @Override
     public void toService() {
         super.toService();
-        if (this.getClass() == Truck.class){
             checkEngine();
             checkTrailer();
-        }
     }
 }
