@@ -23,5 +23,6 @@ public class Truck extends TyreMechanism implements ServiceStationCheckEngine, S
         super.toService();
             checkEngine();
             checkTrailer();
+
     }
 }
