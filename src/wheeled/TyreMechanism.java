@@ -18,7 +18,6 @@ public class TyreMechanism implements ServiceStation{
 
     @Override
     public void toService() {
-
         System.out.println("Обслуживаем " + this.modelName);
         updateTyre();
     }

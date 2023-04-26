@@ -1,6 +1,6 @@
 package wheeled;
 
-public class Truck extends TyreMechanism implements ServiceStationCheckEngine, ServiceStationCheckTrailer {
+public class Truck extends TyreMechanism {
 
 
     public Truck(String name, int wheelsCount) {
@@ -8,13 +8,11 @@ public class Truck extends TyreMechanism implements ServiceStationCheckEngine, S
     }
 
 
-    @Override
-    public void checkTrailer() {
+    private void checkTrailer() {
         System.out.println("Проверяем прицеп");
     }
 
-    @Override
-    public void checkEngine() {
+    private void checkEngine() {
         System.out.println("Проверяем двигатель");
     }
 
