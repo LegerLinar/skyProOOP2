@@ -1,7 +1,7 @@
 package wheeled;
 
-interface ServiceStation {
-     void toService();
-
+public class ServiceStation {
+    public void service(Serviced serviced){
+        serviced.toService();
     }
-
+}

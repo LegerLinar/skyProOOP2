@@ -1,5 +1,6 @@
 import wheeled.Bicycle;
 import wheeled.Car;
+import wheeled.ServiceStation;
 import wheeled.Truck;
 
 public class Main {
@@ -12,12 +13,13 @@ public class Main {
         Truck truck = new Truck("Truck1", 6);
         Truck truck2 = new Truck("Truck2", 8);
 
-        bicycle1.toService();
-        bicycle2.toService();
-        car.toService();
-        car2.toService();
-        truck.toService();
-        truck2.toService();
+        ServiceStation station = new ServiceStation();
+        station.service(car2);
+//        bicycle2.toService();
+//        car.toService();
+//        car2.toService();
+//        truck.toService();
+//        truck2.toService();
 
     }
 }

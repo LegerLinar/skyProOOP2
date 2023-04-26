@@ -1,6 +1,6 @@
 package wheeled;
 
-public class TyreMechanism implements ServiceStation{
+public class TyreMechanism implements Serviced {
  private final String modelName;
  private final int wheelsCount;
 
